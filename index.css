@@ -1,0 +1,196 @@
+body {
+    background-color:gainsboro;
+}
+
+#myCanvas {
+    background-color:white;
+    border: 1px solidrgb(58, 58, 58)0;
+    cursor: url('src/brush_cursor.png'), auto;
+}
+
+#brush{
+    position: absolute;
+    width: 45px;
+    height: auto;
+    left:630px;
+    top: 100px;
+}
+
+#brush:hover{
+    border: 1px solid #000000;
+}
+
+#eraser{
+    position: absolute;
+    width: 45px;
+    height: auto;
+    left:700px;
+    top: 100px;
+}
+
+#eraser:hover{
+    border: 1px solid #000000;
+}
+
+#text{
+    position: absolute;
+    width: 45px;
+    height: auto;
+    left:770px;
+    top: 100px;
+}
+
+#text:hover{
+    border: 1px solid #000000;
+}
+
+#circle{
+    position: absolute;
+    width: 45px;
+    height: auto;
+    left:628px;
+    top: 178px;
+}
+
+#circle:hover{
+    border: 1px solid #000000;
+}
+
+#triangle{
+    position: absolute;
+    width: 47px;
+    height: auto;
+    left: 700px;
+    top: 175px;
+}
+
+#triangle:hover{
+    border: 1px solid #000000;
+}
+
+#rectangle{
+    position: absolute;
+    width: 45px;
+    height: auto;
+    left:771px;
+    top: 176px;
+}
+
+#rectangle:hover{
+    border: 1px solid #000000;
+}
+
+#download{
+    position: absolute;
+    width: 45px;
+    height: auto;
+    left:628px;
+    top: 250px;
+}
+
+#download:hover{
+    border: 1px solid #000000;
+}
+
+#upload{
+    position: absolute;
+    width: 47px;
+    height: auto;
+    left: 700px;
+    top: 250px;
+}
+
+#upload:hover{
+    border: 1px solid #000000;
+}
+
+#uploader{
+    display: none;
+}
+
+#line{
+    position: absolute;
+    width: 43px;
+    height: auto;
+    left: 771px;
+    top: 250px;
+}
+
+#line:hover{
+    border: 1px solid #000000;
+}
+
+#refresh{
+    position: absolute;
+    width: 42px;
+    height: auto;
+    left:630px;
+    top: 330px;
+}
+
+#refresh:hover{
+    border: 1px solid #000000;
+}
+
+#undo{
+    position: absolute;
+    width: 42px;
+    height: auto;
+    left:700px;
+    top: 327px;
+}
+
+#undo:hover{
+    border: 1px solid #000000;
+}
+
+#redo{
+    position: absolute;
+    width: 42px;
+    height: auto;
+    left:770px;
+    top: 327px;
+}
+
+#redo:hover{
+    border: 1px solid #000000;
+}
+
+#sliderBox {
+    position: absolute;
+    left: 630px;
+    top: 400px;
+}
+
+#slider {
+    -webkit-appearance: none;  /* Override default CSS styles */
+    appearance: none;
+
+    height: 10px;
+    border-radius: 5px;
+    background: #b8b8b8;
+    outline: none;
+}
+
+/* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+#slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%; 
+    background: #04AA6D;
+    cursor: pointer;
+}
+
+#colorPickerBox {
+    position: absolute;
+    left: 630px;
+    top: 430px;
+}
+
+.fonts{
+    position: absolute;
+    left: 630px;
+    top: 465px;
+}

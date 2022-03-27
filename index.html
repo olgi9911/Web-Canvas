@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+		<title>Web Canvas</title>
+        <link rel="stylesheet" type="text/css" href="index.css">
+        <link rel="stylesheet" type="text/css" href="shadow.css">
+    </head>
+    <body onload="init();">
+        <h1>Web Canvas</h1>
+        <div id = "canvasContainer">
+            <canvas id="myCanvas" class="shadow-5" width="600" height="400" style="cursor: url('src/brush_cursor.png') 0 30, auto;"></canvas>
+        </div>
+        <div>
+            <input type="image" src="src/brush_icon.png" id="brush" onclick="brush()">
+            <input type="image" src="src/eraser_icon.png" id="eraser" onclick="erase()">
+            <input type="image" src="src/text_icon.png" id="text" onclick="text()">
+            <input type="image" src="src/circle_icon.png" id="circle" onclick="circle()">
+            <input type="image" src="src/triangle_icon.png" id="triangle" onclick="triangle()">
+            <input type="image" src="src/rectangle_icon.png" id="rectangle" onclick="rectangle()">
+            <input type="image" src="src/refresh_icon.png" id="refresh" onclick="refresh()">
+            <input type="image" src="src/line_icon.png" id="line" onclick="line()">
+            <input type="image" src="src/undo_icon.png" id="undo" onclick="undo()">
+            <input type="image" src="src/redo_icon.png" id="redo" onclick="redo()">
+            <a href="#" download="canvas.png" onclick="this.href=document.getElementById('myCanvas').toDataURL()">
+                <img src = "src/download_icon.png" id="download">
+            </a>
+            <label>
+                <img src = "src/upload_icon.png" id = "upload">
+                <input type="file" accept="image/*" id="uploader">
+            </label>
+            
+        </div>
+        <div id = "sliderBox">
+            <label for="slider">Width</label>
+            <input type = "range" id = "slider" min = "1" max = "30" value = "3">
+        </div>
+        <div id = "colorPickerBox">
+            <label for="colorpicker">Color Picker:</label>
+            <input type="color" id="colorPicker" value="#000000">
+        </div>
+        <div class="fonts">
+            <select id="font_size">
+                <option value="8">8</option>
+                <option value="10">10</option>
+                <option selected value="12">12</option>
+                <option value="14">14</option>
+                <option value="16">16</option>
+                <option value="18">18</option>
+                <option value="24">24</option>
+                <option value="48">48</option>
+                <option value="64">64</option>
+            </select>
+            <select id="font_family">
+                <option selected value="arial">Arial</option>
+                <option value="helvetica">Helvetica</option>
+                <option value="verdana">Verdana</option>
+                <option value="georgia">Georgia</option>
+                <option value="courier">Courier</option>
+            </select>
+        </div>
+
+		
+        <script type="text/javascript" src="index.js"></script>
+    </body>
+</html>
